@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Randevu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body{
+
+background-image:url('hakkimizda.jpg');
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size:cover;
+
+}
+</style>
+</head>
+<body>
+
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">Randevu Al</h3>
+  <p>Evcil Hayvan Doğum Günü Sitesi olarak, sevimli dostlarınızın yaş günlerini unutulmaz kılmak üzere sunduğumuz hizmetlerimizi sizinle bir araya getirmek için sabırsızlanıyoruz.
+Evcil hayvanınızın doğum günü partisini planlamak, temalı süslemeler, özel pastalar ve daha pek çok detayı düşünmek oldukça heyecan verici bir süreçtir.
+
+Randevu almak için, sitemizde bulunan "İletişim" bölümünden kolayca işlemlerinizi başlatabilirsiniz.
+Evcil dostunuzun doğum gününe özel detayları belirtmek ve isteklerinizi paylaşmak için size özel bir form sunuyoruz. 
+Formu doldurduktan sonra, uzman ekibimiz en kısa sürede sizinle iletişime geçecek ve doğum günü planlaması için detayları konuşabileceğiniz bir randevu ayarlayacaktır.
+
+Evcil hayvanınızın yaş günü partisi için düzenlemeler yapmak artık çok daha kolay! Siz de sevimli dostunuzun doğum gününü unutulmaz kılmak ve detayları konuşmak için hemen randevunuzu alın. 
+Biz, Minik Patiler olarak, her bir anın sevgi ve mutluluk dolu olması için buradayız.</p>
+</div>
+
+ 
+<script>
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>

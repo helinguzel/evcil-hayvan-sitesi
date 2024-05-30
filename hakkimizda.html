@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hakkımızda</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body{
+
+background-image:url('hakkimizda.jpg');
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size:cover;
+
+}
+</style>
+</head>
+<body>
+
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">HAKKIMIZDA</h3>
+  <p>Hoş geldiniz! Evcil Hayvan Doğum Günü Sitesi olarak, evcil dostlarınızın özel anlarını kutlamak ve paylaşmak için bir araya geldik. Biz, hayvansever bir ekip olarak, evcil hayvan sahiplerinin en sevdikleri dostlarına unutulmaz doğum günü deneyimleri yaşatmalarına yardımcı olmak amacıyla bu platformu oluşturduk.
+
+Sitemizde, sevimli dostlarınızın doğum günlerini renklendirecek eğlenceli ve özel ürünlerle dolu bir dünya sizi bekliyor. Temalı parti setleri, kişiye özel hazırlanan pastalar, eğlenceli kostümler, ödüllü oyunlar ve daha fazlasıyla evcil hayvanlarınızın yaş günlerini unutulmaz kılmak için size geniş bir seçenek sunuyoruz.
+
+Amacımız, evcil hayvan sahiplerine doğum günü kutlamalarını planlama konusunda ilham vermek ve bu özel anları daha anlamlı hale getirmek. Aynı zamanda, evcil hayvanlarını seven topluluğumuz arasında bir bağ oluşturarak deneyimlerimizi paylaşmak ve birbirimize destek olmak istiyoruz.
+
+Evcil Hayvan Doğum Günü Sitesi olarak, sevimli dostlarınızın yaş günlerini daha da özel kılmak için buradayız. Birlikte sevgi ve mutluluk dolu anılar biriktirmek için sizi aramızda görmekten mutluluk duyarız. Teşekkür ederiz ki bizimle birlikte bu özel yolculuğa katılıyorsunuz!</p>
+</div>
+
+ 
+<script>
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
